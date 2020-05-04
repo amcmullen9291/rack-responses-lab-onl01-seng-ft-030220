@@ -1,6 +1,7 @@
 class Application 
 
   def call(env)
+    resp = Rack::Response.new
     clock = Time.now
     now = clock.to_a
     hour = now[2]
