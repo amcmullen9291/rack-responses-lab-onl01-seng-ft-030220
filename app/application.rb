@@ -4,7 +4,7 @@ class Application
     resp = Rack::Response.new 
     now = Time.now
     now = now.to_a
-     if now[5].to_i < 12
+     if now < 12
        print "It is ""#{now}"
        resp.write "Good Morning!"
      else
