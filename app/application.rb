@@ -1,6 +1,6 @@
 class Application 
 
-  def times
+  def call(env)
     clock = Time.now
     now = clock.to_a
     hour = now[2]
