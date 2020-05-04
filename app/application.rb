@@ -2,13 +2,15 @@ class Application
 
   def call (env)
     resp = Rack::Response.new 
-    now = Time.now
+    clock = Time.now
     now = now.to_a
-     if now < 12
-       print "It is ""#{now}"
+    hour = now[5]
+    hour = hour.to_i
+     if hour < 12
+       print "It is ""#{clock}"
        resp.write "Good Morning!"
      else
-       print "It is ""#{now}" 
+       print "It is ""#{clock}" 
        resp.write "Good Afternoon!"
      end
   end
