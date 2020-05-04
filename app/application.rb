@@ -3,7 +3,7 @@ class Application
   def call (env)
     resp = Rack::Response.new 
     now = Time.now
-     if now[5] < 12
+     if now < 12
        print "It is ""#{now}"
        resp.write "Good Morning!"
      else
