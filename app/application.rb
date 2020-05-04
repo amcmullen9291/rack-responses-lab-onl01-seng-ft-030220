@@ -9,6 +9,7 @@ class Application
        resp.write "The time is ""#{clock}."
        resp.write "Good Morning!"
      else
+       resp.write "The time is ""#{clock}."
        resp.write "Good Afternoon!"
      end
      resp.finish
