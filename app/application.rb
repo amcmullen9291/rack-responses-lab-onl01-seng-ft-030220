@@ -3,7 +3,8 @@ class Application
   def call (env)
     resp = Rack::Response.new 
     clock = Time.now
-    now = clock.to_a.split(",")
+    now = clock.to_a
+    now = now.split(",")
     hour = now[4]
     # hour = hour.to_i
      if hour < 12
