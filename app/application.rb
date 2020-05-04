@@ -10,6 +10,7 @@ def call (env)
    else
      print "It is ""#{now}" 
      resp.write "Good Afternoon!"
+   end
 end
 
 end 
