@@ -6,9 +6,9 @@ class Application
     now = clock.to_a
     hour = now[2]
      if hour < 
-       resp.write "The time is ""#{clock}," "Good Morning!"
+       resp.write "Good Morning!"
      else
-       resp.write "The time is ""#{clock},"" Good Afternoon!"
+       resp.write "Good Afternoon!"
      end
      resp.finish
   end
