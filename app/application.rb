@@ -4,9 +4,9 @@ class Application
     resp = Rack::Response.new 
     clock = Time.now
     now = now.to_a
-    hour = now[5]
-    hour = hour.to_i
-     if hour < 12
+    # hour = now[5]
+    # hour = hour.to_i
+     if now < 12
        print "It is ""#{clock}"
        resp.write "Good Morning!"
      else
